@@ -7,13 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A557ED32B3068BC009D7D67 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A557ED22B3068BB009D7D67 /* ReplayKit.framework */; };
+		5A557ED62B3068BC009D7D67 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A557ED52B3068BC009D7D67 /* SampleHandler.swift */; };
+		5A557EDD2B3068BD009D7D67 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A557ED22B3068BB009D7D67 /* ReplayKit.framework */; };
+		5A557EDF2B3068BD009D7D67 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A557EDE2B3068BD009D7D67 /* UIKit.framework */; };
+		5A557EE22B3068BD009D7D67 /* BroadcastSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A557EE12B3068BD009D7D67 /* BroadcastSetupViewController.swift */; };
+		5A557EE62B3068BD009D7D67 /* uploadSetupUI.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5A557EDC2B3068BD009D7D67 /* uploadSetupUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5A557EE92B3068BD009D7D67 /* upload.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5A557ED02B3068BB009D7D67 /* upload.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5A8606562B30640800FF4FE2 /* streamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8606552B30640800FF4FE2 /* streamApp.swift */; };
 		5A8606582B30640800FF4FE2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8606572B30640800FF4FE2 /* ContentView.swift */; };
 		5A86065A2B30640D00FF4FE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A8606592B30640D00FF4FE2 /* Assets.xcassets */; };
 		5A86065D2B30640D00FF4FE2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A86065C2B30640D00FF4FE2 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5A557EE42B3068BD009D7D67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A86064A2B30640800FF4FE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A557EDB2B3068BD009D7D67;
+			remoteInfo = uploadSetupUI;
+		};
+		5A557EE72B3068BD009D7D67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A86064A2B30640800FF4FE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A557ECF2B3068BB009D7D67;
+			remoteInfo = upload;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5A557EEA2B3068BD009D7D67 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5A557EE62B3068BD009D7D67 /* uploadSetupUI.appex in Embed Foundation Extensions */,
+				5A557EE92B3068BD009D7D67 /* upload.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5A557ED02B3068BB009D7D67 /* upload.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = upload.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A557ED22B3068BB009D7D67 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		5A557ED52B3068BC009D7D67 /* SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandler.swift; sourceTree = "<group>"; };
+		5A557ED72B3068BC009D7D67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A557EDC2B3068BD009D7D67 /* uploadSetupUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = uploadSetupUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A557EDE2B3068BD009D7D67 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5A557EE12B3068BD009D7D67 /* BroadcastSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastSetupViewController.swift; sourceTree = "<group>"; };
+		5A557EE32B3068BD009D7D67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A8606522B30640800FF4FE2 /* stream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A8606552B30640800FF4FE2 /* streamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = streamApp.swift; sourceTree = "<group>"; };
 		5A8606572B30640800FF4FE2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -22,6 +69,23 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5A557ECD2B3068BB009D7D67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A557ED32B3068BC009D7D67 /* ReplayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A557ED92B3068BD009D7D67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A557EDD2B3068BD009D7D67 /* ReplayKit.framework in Frameworks */,
+				5A557EDF2B3068BD009D7D67 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5A86064F2B30640800FF4FE2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -32,10 +96,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A557ED12B3068BB009D7D67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A557ED22B3068BB009D7D67 /* ReplayKit.framework */,
+				5A557EDE2B3068BD009D7D67 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A557ED42B3068BC009D7D67 /* upload */ = {
+			isa = PBXGroup;
+			children = (
+				5A557ED52B3068BC009D7D67 /* SampleHandler.swift */,
+				5A557ED72B3068BC009D7D67 /* Info.plist */,
+			);
+			path = upload;
+			sourceTree = "<group>";
+		};
+		5A557EE02B3068BD009D7D67 /* uploadSetupUI */ = {
+			isa = PBXGroup;
+			children = (
+				5A557EE12B3068BD009D7D67 /* BroadcastSetupViewController.swift */,
+				5A557EE32B3068BD009D7D67 /* Info.plist */,
+			);
+			path = uploadSetupUI;
+			sourceTree = "<group>";
+		};
 		5A8606492B30640800FF4FE2 = {
 			isa = PBXGroup;
 			children = (
 				5A8606542B30640800FF4FE2 /* stream */,
+				5A557ED42B3068BC009D7D67 /* upload */,
+				5A557EE02B3068BD009D7D67 /* uploadSetupUI */,
+				5A557ED12B3068BB009D7D67 /* Frameworks */,
 				5A8606532B30640800FF4FE2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				5A8606522B30640800FF4FE2 /* stream.app */,
+				5A557ED02B3068BB009D7D67 /* upload.appex */,
+				5A557EDC2B3068BD009D7D67 /* uploadSetupUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +166,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5A557ECF2B3068BB009D7D67 /* upload */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A557EF02B3068BD009D7D67 /* Build configuration list for PBXNativeTarget "upload" */;
+			buildPhases = (
+				5A557ECC2B3068BB009D7D67 /* Sources */,
+				5A557ECD2B3068BB009D7D67 /* Frameworks */,
+				5A557ECE2B3068BB009D7D67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = upload;
+			productName = upload;
+			productReference = 5A557ED02B3068BB009D7D67 /* upload.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		5A557EDB2B3068BD009D7D67 /* uploadSetupUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A557EEF2B3068BD009D7D67 /* Build configuration list for PBXNativeTarget "uploadSetupUI" */;
+			buildPhases = (
+				5A557ED82B3068BD009D7D67 /* Sources */,
+				5A557ED92B3068BD009D7D67 /* Frameworks */,
+				5A557EDA2B3068BD009D7D67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = uploadSetupUI;
+			productName = uploadSetupUI;
+			productReference = 5A557EDC2B3068BD009D7D67 /* uploadSetupUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		5A8606512B30640800FF4FE2 /* stream */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A8606602B30640D00FF4FE2 /* Build configuration list for PBXNativeTarget "stream" */;
@@ -77,10 +207,13 @@
 				5A86064E2B30640800FF4FE2 /* Sources */,
 				5A86064F2B30640800FF4FE2 /* Frameworks */,
 				5A8606502B30640800FF4FE2 /* Resources */,
+				5A557EEA2B3068BD009D7D67 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5A557EE52B3068BD009D7D67 /* PBXTargetDependency */,
+				5A557EE82B3068BD009D7D67 /* PBXTargetDependency */,
 			);
 			name = stream;
 			productName = stream;
@@ -97,6 +230,12 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					5A557ECF2B3068BB009D7D67 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					5A557EDB2B3068BD009D7D67 = {
+						CreatedOnToolsVersion = 15.0;
+					};
 					5A8606512B30640800FF4FE2 = {
 						CreatedOnToolsVersion = 15.0;
 					};
@@ -116,11 +255,27 @@
 			projectRoot = "";
 			targets = (
 				5A8606512B30640800FF4FE2 /* stream */,
+				5A557ECF2B3068BB009D7D67 /* upload */,
+				5A557EDB2B3068BD009D7D67 /* uploadSetupUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5A557ECE2B3068BB009D7D67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A557EDA2B3068BD009D7D67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5A8606502B30640800FF4FE2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,6 +288,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5A557ECC2B3068BB009D7D67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A557ED62B3068BC009D7D67 /* SampleHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A557ED82B3068BD009D7D67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A557EE22B3068BD009D7D67 /* BroadcastSetupViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5A86064E2B30640800FF4FE2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -144,7 +315,124 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		5A557EE52B3068BD009D7D67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A557EDB2B3068BD009D7D67 /* uploadSetupUI */;
+			targetProxy = 5A557EE42B3068BD009D7D67 /* PBXContainerItemProxy */;
+		};
+		5A557EE82B3068BD009D7D67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A557ECF2B3068BB009D7D67 /* upload */;
+			targetProxy = 5A557EE72B3068BD009D7D67 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		5A557EEB2B3068BD009D7D67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y83389NKN8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = upload/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = upload;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = nimm;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.stream.upload;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A557EEC2B3068BD009D7D67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y83389NKN8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = upload/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = upload;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = nimm;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.stream.upload;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5A557EED2B3068BD009D7D67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y83389NKN8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = uploadSetupUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = uploadSetupUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "really do need";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.stream.uploadSetupUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A557EEE2B3068BD009D7D67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y83389NKN8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = uploadSetupUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = uploadSetupUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "really do need";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.stream.uploadSetupUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		5A86065E2B30640D00FF4FE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -267,13 +555,17 @@
 		5A8606612B30640D00FF4FE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"stream/Preview Content\"";
+				DEVELOPMENT_TEAM = Y83389NKN8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = aaaa;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = nned;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -295,13 +587,17 @@
 		5A8606622B30640D00FF4FE2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"stream/Preview Content\"";
+				DEVELOPMENT_TEAM = Y83389NKN8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = aaaa;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = nned;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -323,6 +619,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5A557EEF2B3068BD009D7D67 /* Build configuration list for PBXNativeTarget "uploadSetupUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A557EED2B3068BD009D7D67 /* Debug */,
+				5A557EEE2B3068BD009D7D67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A557EF02B3068BD009D7D67 /* Build configuration list for PBXNativeTarget "upload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A557EEB2B3068BD009D7D67 /* Debug */,
+				5A557EEC2B3068BD009D7D67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5A86064D2B30640800FF4FE2 /* Build configuration list for PBXProject "stream" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
